@@ -29,13 +29,8 @@ data_nascimento date not null
 create table usuarios(
 registro_usuario int primary key auto_increment,
 indentificacao_usuario varchar(20) not null,
-senha_acesso varchar(10) not null,
 cadastro_funcionario varchar(1) not null,
 cadastro_usuario varchar(1) not null,
-cadastro_paciente varchar(1) not null,
-cadastro_especialidade varchar(1) not null,
-cadastro_medico varchar(1) not null,
-cadastro_convenio varchar(1) not null,
 agendamento_consulta varchar(1) not null,
 cancelamento_consulta varchar(1) not null,
 modulo_administrativo varchar(1) not null,
@@ -72,4 +67,3 @@ codigo_convenio int,
 );
 
 
-insert into usuarios values (null, "admin", "admin", "y", "y", "y", "y", "y", "y", "y", "y", "y", "y", "y" );
